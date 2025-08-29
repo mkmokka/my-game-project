@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>6-Player Multiplayer Game</title>
+<script type="module" src="main.js"></script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  #game-container {
+    width: 800px;
+    height: 600px;
+    background: #eee;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    position: relative;
+  }
+  select, button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Select Your Avatar and Join Room</h2>
+
+<select id="avatarSelect">
+  <option value="https://randomuser.me/api/portraits/men/10.jpg">Male</option>
+  <option value="https://randomuser.me/api/portraits/women/10.jpg">Female</option>
+</select>
+
+<button onclick="joinRoom('room1', document.getElementById('avatarSelect').value)">
+  Join Room
+</button>
+
+<!-- AdSense Banner -->
+<div style="margin-top:20px;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3092437602514196"
+       data-ad-slot="3780413933"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<!-- Game Container -->
+<div id="game-container">
+  <!-- Your Phaser game or canvas will be loaded here -->
+  <p style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#888;">
+    Game will load here...
+  </p>
+</div>
+
+</body>
+</html>
